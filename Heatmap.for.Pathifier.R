@@ -83,6 +83,16 @@ col.cluster = hclust(col.distance, method = "average")
 # x[rowInd, colInd] : subscript out of bounds.
 
 ###############################################################################
+## Assign Columns labels (Optional) Uncomment
+###############################################################################
+
+# scores <- read.delim(file = "scores.txt", header = T)
+# scores <- scores[,2:ncol(scores)]
+# 
+# colnames(PDSmatrix) <- colnames(scores)
+# # colnames (PDSmatrix) <- NULL # Uncomment for removing labelnames for columns
+
+###############################################################################
 ## Plotting the Heatmap!! (where all colorful things happen...)
 ###############################################################################
 
@@ -93,17 +103,31 @@ png("heatmap+labels.png", # Name of png file
     res = 300,            # 300 pixels per inch
     pointsize = 7)        # font size
 
-heatmap.2(PDSmatrix, 
-#           cellnote = PDSmatrix,  # Uncomment for score inside color
-          main = "PDS",          # heat map title
-          notecol="black",       # change font color of cell labels to black
+heatmap.2(PDSmatrix,
+          main = "Gene Ontology - Apoptosis",          # heat map title
           density.info= "none",  # turns off density plot inside color legend
           trace= "none",         # turns off trace lines inside the heat map
           margins= c(10,21),     # widens margins around plot
           col=my_palette,        # use on color palette defined earlier 
+          Rowv = as.dendrogram(row.cluster), # apply selected clustering method
+          Colv = as.dendrogram(col.cluster), # apply selected clustering method
+          keysize= 0.8           # size of color key
+## Color labeling columns (Opt. RowSideColors for rows)
+          ColSideColors= c(           # Grouping col-samples into two different
+            rep("dodgerblue", 10),    # categories, Samples 1-10: blue (normals)
+            rep("firebrick1", 90)),    # Samples 11-100 (tumors)
+#Additional Options
 #           breaks= col_breaks,  # enable color transition at specified limits
 #           dendrogram= "col",   # only draw a columns dendrogram (opt. "row")
-          Rowv = as.dendrogram(row.cluster), # apply selected clustering method
-          Colv = as.dendrogram(col.cluster)) # apply selected clustering method
+)    
+
+## Legend for ColumnSide color labeling 
+par(lend = 1)           # square line ends for the color legend
+legend("topright",      # location of the legend on the heatmap plot
+       legend = c("Normals", "Tumors"), # category labels
+       col = c("dodgerblue", "firebrick1"),  # color key
+       lty= 1,          # line style
+       lwd = 5, unit    # line width
+)
 
 dev.off()               # close the PNG device
