@@ -1,5 +1,5 @@
 # Heatmap.for.Pathifier
-A script for reading the results of Pathifier (Drier et al., 2013)
+A script for reading the results of Pathifier (Drier et al., 2013) and generating a heatmap Pathifier publication style
 
 This script works directly with the results of the standalone version of Pathifier
 
