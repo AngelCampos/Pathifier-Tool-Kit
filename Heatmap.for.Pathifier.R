@@ -1,11 +1,11 @@
 ###############################################################################
 ## Heatmap for Pathifier results in R
-### Author: Angel García-Campos
+### Author: Angel Garcia-Campos https://github.com/AngelCampos
 #### Base by wonderful: Sebastian Raschka https://github.com/rasbt
 ###############################################################################
 
 ###############################################################################
-### Installing and/or loading required packages "gplots" "RColorBrewer"
+### Installing and/or loading required packages
 ###############################################################################
 
 if (!require("gplots")) {
@@ -82,7 +82,7 @@ col.cluster = hclust(col.distance, method = "complete")
 # x[rowInd, colInd] : subscript out of bounds.
 
 ###############################################################################
-## Assign Columns labels (Optional)
+## Assign Column labels (Optional)
 ###############################################################################
 
 # scores <- read.delim(file = "scores.txt", header = T)
@@ -118,7 +118,6 @@ heatmap.2(PDSmatrix,
 #           rep("firebrick1", 90)),    # Samples 11-100 (tumors)
 #           breaks= col_breaks,  # enable color transition at specified limits
 #           dendrogram= "col",   # only draw a column dendrogram (opt. "row")
-)    
 
 ## Legend for ColumnSide color labeling 
 # par(lend = 1)           # square line ends for the color legend
