@@ -12,6 +12,7 @@ if (!require("pathifier")) {
 
 # Load expression data for PATHIFIER
 exp.matrix <- read.delim(file =file.choose(), as.is = T, row.names = 1)
+
 # Loading Genesets annotation
 gene_sets <- as.matrix(read.delim(file = file.choose(),
                        header = F, sep = "\t", as.is = T))
