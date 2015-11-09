@@ -42,11 +42,11 @@ and generating a heatmap "Drier's et al." style
 This script works directly with the results of the "Run_Pathifier.R" scritp and
 the stand-alone version of Pathifier (See additional notes).
 
-"Heatmap_4_Pathifier.R" Output file using EXAMPLE_DATA
-![alt text][heatmap]
-
-Must be sourced in the directory where the following files are:
+Note: Must be sourced in the directory where the following files are:
 "pathways.txt", "PDS.RData"
+
+Output preview (using EXAMPLE_DATA)
+![alt text][heatmap]
 
 ---
 ### Additional notes:
