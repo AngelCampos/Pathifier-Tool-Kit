@@ -22,7 +22,7 @@ following format:
 Second file required by the script is a TAB separated file of the pathway
 information in GMT format:
 
-||
+||||||
 |---|
 |PATHWAY1|GeneA|GeneB|GeneC|etc...|
 |PATHWAY2|GeneD|GeneA|GeneX|etc...|
