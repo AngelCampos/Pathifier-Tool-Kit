@@ -15,7 +15,7 @@ exp.matrix <- read.delim(file =file.choose(), as.is = T, row.names = 1)
 
 # Loading Genesets annotation
 gene_sets <- as.matrix(read.delim(file = file.choose(),
-                       header = F, sep = "\t", as.is = T))
+                       header = F, sep = "\t", as.is = T))  # BUG: The first line must be the longest!
 
 #  Generate a list that contains genes in genesets
 gs <- list()
