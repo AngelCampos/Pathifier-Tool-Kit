@@ -1,6 +1,6 @@
 ################################################################################
 # Running PATHIFIER (Drier et al., 2013)
-# Author: Miguel Angel Garcia-Campos https://github.com/AngelCampos
+# Author: Miguel Angel Garcia-Campos - Github: https://github.com/AngelCampos
 ################################################################################
 
 # Install/load package
@@ -13,7 +13,8 @@ if (!require("pathifier")) {
 # Load expression data for PATHIFIER
 exp.matrix <- read.delim(file =file.choose(), as.is = T, row.names = 1)
 
-# Loading Genesets annotation
+# Loading Genesets annotation 
+# NOTE: MUST contain SAME number of elements in all rows!!
 gene_sets <- as.matrix(read.delim(file = file.choose(),
                        header = F, sep = "\t", as.is = T))
 
@@ -54,7 +55,7 @@ PDS<-quantify_pathways_deregulation(DATASET$data, DATASET$allgenes,
                                     DATASET$normals, attempts = 100,
                                     logfile="logfile.txt", min_std = 0.1889568)
 # Remove unnecesary data
-rm(gene_sets, data, exp.matrix, allgenes, DATASET, allgenes, PATHWAYS)
+rm(gene_sets, data, exp.matrix, allgenes, DATASET, PATHWAYS)
 
 # Save image into working directory
 save.image("PDS.RData")
