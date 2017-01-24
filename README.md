@@ -1,6 +1,6 @@
 # Pathifier Tool Kit
 
-### Run_Pathifier.R
+### 1_Run_Pathifier.R
 
 An R script for running Pathifier on R.
 
@@ -34,19 +34,34 @@ Notes:
 *Test-data is provided on TEST-DATA directory*
 
 ---
-### Heatmap_4_Pathifier.R
+### 2_Heatmap_4_PDS.R
 
 An R script for showing results of Pathifier (Drier et al., 2013)
 and generating a heatmap "Drier's et al." style
 
-This script works directly with the results of the "Run_Pathifier.R" scritp and
-the stand-alone version of Pathifier (See additional notes).
+This script works directly with the results of the "1_Run_Pathifier.R" script 
+and the stand-alone version of Pathifier, adding a vector for depicting
+normal samples (See additional notes).
 
-Note: Must be sourced in the directory where the following files are:
-"pathways.txt", "PDS.RData"
+THe last update of the heatmap adds sample labeling for normal (healthy) vs 
+tumoral samples
 
 Output preview (using EXAMPLE_DATA)
 ![alt text][heatmap]
+
+---
+### 3_Curves_4_PDS.R
+
+An R script with 2 functions for plotting the principal curves derived of the 
+pathway deregulation analysis using Pathifier (Drier et al., 2013)
+
+This script works directly with the results of "1_Run_Pathifier.R" script and
+the stand-alone version of Pathifier, adding a vector for depicting normal 
+samples (See additional notes).
+
+Output example (using EXAMPLE_DATA)
+![alt text][princurve]
+![alt text][princurvedata]
 
 ---
 ### Additional notes:
@@ -55,4 +70,6 @@ Pathifier Stand-alone version: http://www.weizmann.ac.il/complex/compphys/softwa
 R-version of Pathifier is available via Bioconductor:
 http://bioconductor.org/packages/pathifier/
 
-[heatmap]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/heatmap.png "Pathifier Style Heatmap"
+[heatmap]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/heatmap.png "PDS Heatmap"
+[princurve]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/PathwayCurve.png "Principal Curve of an example pathway"
+[princurvedata]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/PathwayCurveData.png "Principal curve and data points of an example pathway"
