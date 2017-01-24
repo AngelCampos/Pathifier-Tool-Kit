@@ -59,8 +59,12 @@ This script works directly with the results of "1_Run_Pathifier.R" script and
 the stand-alone version of Pathifier, adding a vector for depicting normal 
 samples (See additional notes).
 
-Output example (using EXAMPLE_DATA)
+Output examples (using EXAMPLE_DATA)
+
+
 ![alt text][princurve]
+
+
 ![alt text][princurvedata]
 
 ---
