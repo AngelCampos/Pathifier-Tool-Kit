@@ -31,7 +31,9 @@ Notes:
 + NO HEADER ROW!
 + Gene names used must coincide between expression matrix and pathway annotation
 
-*Test-data is provided on TEST-DATA directory*
+**Test-data is provided on TEST-DATA directory**
+
+Powered by package(s): "pathifier"
 
 ---
 ### 2_Heatmap_4_PDS.R
@@ -43,11 +45,13 @@ This script works directly with the results of the "1_Run_Pathifier.R" script
 and the stand-alone version of Pathifier, adding a vector for depicting
 normal samples (See additional notes).
 
-THe last update of the heatmap adds sample labeling for normal (healthy) vs 
+The last update of the heatmap adds sample labeling for normal (healthy) vs 
 tumoral samples
 
 Output preview (using EXAMPLE_DATA)
 ![alt text][heatmap]
+
+Powered by package(s): "gplots", "RColorBrewer"
 
 ---
 ### 3_Curves_4_PDS.R
@@ -61,11 +65,11 @@ samples (See additional notes).
 
 Output examples (using EXAMPLE_DATA)
 
-
 ![alt text][princurve]
 
-
 ![alt text][princurvedata]
+
+Powered by package(s): "plotly", "RColorBrewer"
 
 ---
 ### Additional notes:
