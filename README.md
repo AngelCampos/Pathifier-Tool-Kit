@@ -24,12 +24,13 @@ information in GMT format:
 
 ||||||
 |---|---|---|---|---|---|
-|PATHWAY1|        |GeneA|GeneB|GeneC|etc...|
-|PATHWAY2|        |GeneD|GeneA|GeneX|etc...|
+|PATHWAY1|Blank cell|GeneA|GeneB|GeneC|etc...|
+|PATHWAY2|Blank cell|GeneD|GeneA|GeneX|etc...|
 
 Notes:
 + NO HEADER ROW!
 + Gene names used must coincide between expression matrix and pathway annotation
++ GMT format: Each row represents a pathway. 1st column is pathway name or id, 2nd column it's discarded BUT needed, from the 3rd column on starts the genes belonging to that pathway. 
 
 **Test-data is provided on TEST-DATA directory**
 
