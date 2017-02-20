@@ -1,8 +1,16 @@
 # Pathifier Tool Kit
 
+Pathifier is an algorithm designed to model the heterogeneity of a set of 
+samples by calculating their level of deregulation based on their genomic 
+data in a pathway based manner. 
+
+The following scripts mya be used for easier loading of data, and the 
+calculation of default arguments not implemented in the native functions. As 
+well as fast customized plotting of the results of the deregulation analysis.
+
 ### 1_Run_Pathifier.R
 
-An R script for running Pathifier on R.
+An R script for running Pathifier (Drier et al., 2013) in R.
 
 First file required is TAB separated file of the gene expression matrix in the
 following format:
@@ -30,7 +38,9 @@ information in GMT format:
 Notes:
 + NO HEADER ROW!
 + Gene names used must coincide between expression matrix and pathway annotation
-+ GMT format: Each row represents a pathway. 1st column is pathway name or id, 2nd column it's discarded BUT needed, from the 3rd column on starts the genes belonging to that pathway. 
++ GMT format: Each row represents a pathway. 1st column is pathway name or id, 
+2nd column it's discarded BUT needed, from the 3rd column on starts the genes 
+belonging to that pathway. 
 
 **Test-data is provided on TEST-DATA directory**
 
@@ -40,7 +50,7 @@ Powered by package(s): "pathifier"
 ### 2_Heatmap_4_PDS.R
 
 An R script for showing results of Pathifier (Drier et al., 2013)
-and generating a heatmap "Drier's et al." style
+in a heatmap, showing the deregulation of each sample by pathway.
 
 This script works directly with the results of the "1_Run_Pathifier.R" script 
 and the stand-alone version of Pathifier, adding a vector for depicting
