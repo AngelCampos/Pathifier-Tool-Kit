@@ -40,7 +40,8 @@ Notes:
 + Gene names used must coincide between expression matrix and pathway annotation
 + GMT format: Each row represents a pathway. 1st column is pathway name or id, 
 2nd column it's discarded BUT needed, from the 3rd column on starts the genes 
-belonging to that pathway. 
+belonging to that pathway.
++ The PDS stability procedure is set to 10 for illustrative purposes (default should be 100), 
 
 **Test-data is provided on TEST-DATA directory**
 

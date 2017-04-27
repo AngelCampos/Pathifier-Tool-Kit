@@ -4,8 +4,8 @@
 ################################################################################
 # Installing and/or loading required packages
 if (!require("plotly")) {
-  install.packages("gplots", dependencies = TRUE)
-  library(gplots)
+  install.packages("plotly", dependencies = TRUE)
+  library(plotly)
 }
 if (!require("RColorBrewer")) {
   install.packages("RColorBrewer", dependencies = TRUE)

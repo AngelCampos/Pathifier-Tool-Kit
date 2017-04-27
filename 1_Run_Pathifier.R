@@ -72,7 +72,7 @@ PDS <- quantify_pathways_deregulation(DATASET$data,
                                       PATHWAYS$pathwaynames,
                                       DATASET$normals, 
                                       maximize_stability = T,
-                                      attempts = 100,
+                                      attempts = 10,
                                       logfile="logfile.txt",
                                       min_std = min_std,
                                       min_exp = min_exp)
