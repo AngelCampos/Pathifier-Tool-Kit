@@ -1,12 +1,16 @@
 # Pathifier Tool Kit
 
-Pathifier is an algorithm designed to model the heterogeneity of a set of 
-samples by calculating their level of deregulation based on their genomic 
-data in a pathway based manner. 
+Pathifier is an algorithm designed to model the heterogeneity in samples 
+based on their genomic data, e.g. gene expression levels, in a pathway 
+centered manner. It does it by calculating the level of deregulation compared
+to a control group taking into account all the genes involved in a specific
+pathway. In this manner it is possible to represent samples with fewer, but
+more informative variables, based on biological knowledge of the biomolecules
+that work togheter in a pathway (e.g. apoptosis).
 
-The following scripts mya be used for easier loading of data, and the 
-calculation of default arguments not implemented in the native functions. As 
-well as fast customized plotting of the results of the deregulation analysis.
+The following scripts may be used for easier loading of data, and calculation 
+of default arguments not implemented in the native functions. As well as attractive
+plotting of the results of the deregulation analysis.
 
 ### 1_Run_Pathifier.R
 
