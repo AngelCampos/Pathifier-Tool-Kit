@@ -2,7 +2,7 @@
 
 Pathifier is an algorithm designed to model the heterogeneity in samples 
 based on their genomic data, e.g. gene expression levels, in a pathway 
-centered manner. It does it by calculating the level of deregulation compared
+centered manner (Drier et al., 2013). It does it by calculating the level of deregulation compared
 to a control group taking into account all the genes involved in a specific
 pathway. In this manner it is possible to represent samples with fewer, but
 more informative variables, based on biological knowledge of the biomolecules
