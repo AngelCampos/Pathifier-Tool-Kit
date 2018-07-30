@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/35399106.svg)](https://zenodo.org/badge/latestdoi/35399106)
 
 This repository has been developed to help users to run Pathifier and visualize its results 
-in an interactive and manner. The code may need modifications accordingly to users needs.
+in an interactive manner. The code may need modifications according to user's needs.
 
 Pathifier is an algorithm designed to model the heterogeneity in samples 
 based on their genomic data, e.g. gene expression levels, in a pathway 
