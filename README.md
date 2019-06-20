@@ -6,7 +6,8 @@ in an interactive manner. The code may need modifications according to user's ne
 
 Pathifier is an algorithm designed to model the heterogeneity in samples 
 based on their genomic data, e.g. gene expression levels, in a pathway 
-centered manner [(Drier et al., 2013)](https://doi.org/10.1073/pnas.1219651110). It does it by calculating the level of deregulation compared
+centered manner [(Drier et al., 2013)](https://doi.org/10.1073/pnas.1219651110). 
+It does it by calculating the level of deregulation compared
 to a control group taking into account all the genes involved in a specific
 pathway. In this manner it is possible to represent samples with fewer, but
 more informative variables, based on biological knowledge of the biomolecules
@@ -97,6 +98,8 @@ Pathifier Stand-alone version: http://www.weizmann.ac.il/complex/compphys/softwa
 
 R-version of Pathifier is available via Bioconductor:
 http://bioconductor.org/packages/pathifier/
+
+For Pathifier support, please contact the maintainer of the package [Assif Yitzhaki](assif.yitzhaky@weizmann.ac.il)
 
 [heatmap]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/heatmap.png "PDS Heatmap"
 [princurve]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/PathwayCurve.png "Principal Curve of an example pathway"
