@@ -1,6 +1,11 @@
 # Pathifier Tool Kit
 [![DOI](https://zenodo.org/badge/35399106.svg)](https://zenodo.org/badge/latestdoi/35399106)
 
+### Citing Information
+If you use this code, please consider citing it as: M.A. García-Campos. (2018, March 17). AngelCampos/Pathifier-Tool-Kit: v1.0 (Version pathifierTools_v1.0). Zenodo. http://doi.org/10.5281/zenodo.1202186
+
+## Description
+
 This repository has been developed to help users to run Pathifier and visualize its results 
 in an interactive manner. The code may need modifications according to user's needs.
 
@@ -93,7 +98,7 @@ Output examples (using EXAMPLE_DATA)
 Powered by package(s): "plotly", "RColorBrewer"
 
 ---
-### Additional notes:
+## Additional notes:
 Pathifier Stand-alone version: http://www.weizmann.ac.il/complex/compphys/software/yotam/pathifier/installation.html
 
 R-version of Pathifier is available via Bioconductor:
