@@ -104,7 +104,7 @@ Pathifier Stand-alone version: http://www.weizmann.ac.il/complex/compphys/softwa
 R-version of Pathifier is available via Bioconductor:
 http://bioconductor.org/packages/pathifier/
 
-For Pathifier support, please contact the maintainer of the package [Assif Yitzhaki](assif.yitzhaky@weizmann.ac.il)
+For Pathifier support, please contact the maintainer of the package [Assif Yitzhaki](mailto:assif.yitzhaky@weizmann.ac.il)
 
 [heatmap]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/heatmap.png "PDS Heatmap"
 [princurve]: https://raw.githubusercontent.com/AngelCampos/Pathifier-Tool-Kit/master/PathwayCurve.png "Principal Curve of an example pathway"
